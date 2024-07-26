@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+<div id="app">
+    <div id="tabs">
+        <button onclick="showRound(1)">Round 1</button>
+        <button onclick="showRound(2)">Round 2</button>
+    </div>
+    <div id="round-1" class="round">
+        <div id="quiz-container"></div>
+        <div id="scoreboard">
+            <h2>Scoreboard</h2>
+            <div id="teams">
+                <div class="team">
+                    <span>Team 1:</span>
+                    <input type="number" id="team-1-score" value="0" oninput="updateScores()">
+                </div>
+                <div class="team">
+                    <span>Team 2:</span>
+                    <input type="number" id="team-2-score" value="0" oninput="updateScores()">
+                </div>
+                <div class="team">
+                    <span>Team 3:</span>
+                    <input type="number" id="team-3-score" value="0" oninput="updateScores()">
+                </div>
+                <div class="team">
+                    <span>Team 4:</span>
+                    <input type="number" id="team-4-score" value="0" oninput="updateScores()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="round-2" class="round" style="display: none;">
+        <iframe width="100%" height="90%" style="border:3px solid black; margin:auto; display:block" frameborder="0" src="https://crosswordlabs.com/embed/2024-07-26-109"></iframe>
+        <!--<div id="scattegories-container">
+            <div id="scattegories-questions">
+                &lt;!&ndash; Questions will be injected here &ndash;&gt;
+            </div>
+        </div>-->
+        <div id="scoreboard-round-2">
+            <h2>Scoreboard</h2>
+            <div id="teams">
+                <div class="team">
+                    <span>Team 1:</span>
+                    <input type="number" id="team-1-score-round-2" value="0" oninput="updateScoresRound2()">
+                </div>
+                <div class="team">
+                    <span>Team 2:</span>
+                    <input type="number" id="team-2-score-round-2" value="0" oninput="updateScoresRound2()">
+                </div>
+                <div class="team">
+                    <span>Team 3:</span>
+                    <input type="number" id="team-3-score-round-2" value="0" oninput="updateScoresRound2()">
+                </div>
+                <div class="team">
+                    <span>Team 4:</span>
+                    <input type="number" id="team-4-score-round-2" value="0" oninput="updateScoresRound2()">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="app4.js"></script>
+</body>
+</html>
